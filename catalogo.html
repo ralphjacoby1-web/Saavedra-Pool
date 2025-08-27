@@ -1,0 +1,275 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Carpentry Services</title>
+  <!-- Bootstrap CSS -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles/styles.css">
+
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #fff;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-link {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .image-container img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    html, body {
+    overflow-x: hidden;
+  }
+   .footer-link {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+
+  /* Botones con efecto hover suave */
+  .btn {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* Íconos sociales */
+  .social-icon {
+    margin-right: 8px;
+  }
+  .parallax-section {
+  background-image: url('media/fotos/cocina.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%);
+  z-index: 1;
+  /* Para que el filtro funcione bien sin afectar el contenido, es mejor usar un pseudo-elemento: */
+  position: relative;
+}
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.4); /* oscurece la imagen para mejor legibilidad */
+  z-index: 1;
+}
+
+.parallax-section > .position-relative {
+  position: relative;
+  z-index: 2; /* que quede sobre la capa oscura */
+}
+.card,
+  .card-img-top {
+    border-radius: 0;
+  }
+  </style>
+</head>
+<body>
+
+</body>
+<header>
+<nav class="navbar navbar-expand-lg container-fluid px-3 px-md-5 py-3">
+      <a class="navbar-brand" href="#">
+        <img src="media/fotos/20250627_1907_Saavedra Pool PNG_remix_01jyspt3x1ectbdt7b08zg9gyr.png" alt="Logo" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link active" href="index.html">Principal</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+  <main><!-- Sección Catálogo -->
+<!-- Sección Catálogo -->
+<section class="container py-5" id="catalogo">
+   <div class="row vh-100 mb-5">
+      <!-- Text Content -->
+      <div class="col-lg-5 d-flex flex-column justify-content-center p-5">
+        <h1 class="display-5 fw-bold">Catálogo</h1>
+        <p class="lead">Descubre nuestros muebles de calidad</p>
+        <a href="#productos" class="btn btn-outline-dark mt-3 w-50">VER MÁS</a>
+      </div>
+
+      <!-- Image Content -->
+      <div class="col-lg-7 p-0 image-container">
+        <img src="media/fotos/catalogo/living_saavedra.webp" alt="Carpentry image" class="img-fluid">
+      </div>
+    </div>
+    <hr class="mt-2 mb-5">
+
+  <div class="row g-4" id="productos">
+    <!-- Producto 1 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 border-0 shadow">
+        <img src="media/fotos/catalogo/mesa_pool_ia.webp" class="card-img-top" alt="Producto 1" style="height: 250px; object-fit: cover;">
+        <div class="card-body d-flex flex-column justify-content-between text-center">
+          <h5 class="card-title">Mesa de pool: Saavedra Pool®</h5>
+          <a href="pool.html" class="btn btn-outline-dark mt-3 w-50 mx-auto">VER PRODUCTO</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 border-0 shadow">
+        <img src="media/fotos/catalogo/mesita_luz.webp" class="card-img-top" alt="Producto 2" style="height: 250px; object-fit: cover;">
+        <div class="card-body d-flex flex-column justify-content-between text-center">
+          <h5 class="card-title">Mesa de luz "línea Guatambú"</h5>
+          <a href="Mesa_luz_linea_guatambu.html" class="btn btn-outline-dark mt-3 w-50 mx-auto">VER PRODUCTO</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 border-0 shadow">
+        <img src="media/fotos/catalogo/escritorio.webp" class="card-img-top" alt="Producto 3" style="height: 250px; object-fit: cover;">
+        <div class="card-body d-flex flex-column justify-content-between text-center">
+          <h5 class="card-title">Escritorio con tapa plegable</h5>
+          <a href="Escritorio_plegable.html" class="btn btn-outline-dark mt-3 w-50 mx-auto">VER PRODUCTO</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="row g-4 mt-2">
+    <!-- Producto 1 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 border-0 shadow">
+        <img src="media/fotos/catalogo/mueble_cuadrado.webp" class="card-img-top" alt="Producto 1" style="height: 250px; object-fit: cover;">
+        <div class="card-body d-flex flex-column justify-content-between text-center">
+          <h5 class="card-title">Mesa ratona "línea Guatambú"</h5>
+          <a href="mesa_ratona_guata.html" class="btn btn-outline-dark mt-3 w-50 mx-auto">VER PRODUCTO</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 border-0 shadow">
+        <img src="media/fotos/catalogo/vanitory.webp" class="card-img-top" alt="Producto 2" style="height: 250px; object-fit: cover;">
+        <div class="card-body d-flex flex-column justify-content-between text-center">
+          <h5 class="card-title">Vanitory Guayubira maciza</h5>
+          <a href="vanitory.html" class="btn btn-outline-dark mt-3 w-50 mx-auto">VER PRODUCTO</a>
+        </div>
+      </div>
+    </div>
+
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 border-0 shadow">
+        <img src="media/fotos/catalogo/mesa_vintage.webp" class="card-img-top" alt="Producto 1" style="height: 250px; object-fit: cover;">
+        <div class="card-body d-flex flex-column justify-content-between text-center">
+          <h5 class="card-title">Mesa ratona vintage</h5>
+          <a href="mesa_vintage.html" class="btn btn-outline-dark mt-3 w-50 mx-auto">VER PRODUCTO</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 2 -->
+    <div class="col-sm-6 col-md-4">
+      <div class="card h-100 border-0 shadow">
+        <img src="media/fotos/catalogo/mesa_terraza.webp" class="card-img-top" alt="Producto 2" style="height: 250px; object-fit: cover;">
+        <div class="card-body d-flex flex-column justify-content-between text-center">
+          <h5 class="card-title">Mesa plegable y desmontable</h5>
+          <a href="mesa_plegable_desmontable.html" class="btn btn-outline-dark mt-3 w-50 mx-auto">VER PRODUCTO</a>
+        </div>
+      </div>
+    </div>
+
+    <!-- Producto 3 -->
+    
+  </div>
+</section>
+
+</main>
+<hr class="mt-2 mb-0">
+
+<footer class="bg-white text-dark pt-5 mt-0">
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">AYUDA</h6>
+        <ul class="list-unstyled">
+          <li><a href="formulario.html" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- Columna 2 -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">CARPINTERÍA</h6>
+        <ul class="list-unstyled">
+          <li><a href="sobre_nosotros.html" class="footer-link">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+      <!-- Columna 3 -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">TALLER</h6>
+        <p class="mb-1">Pinamar</p>
+        <p class="mb-1">+5491163534852</p>
+        <p class="mb-0">saavedrapool4@gmail.com</p>
+      </div>
+      <!-- Columna 4 -->
+      <div class="col-md-3 mb-4 text-md-end text-start">
+        <h6 class="fw-bold">SOCIAL</h6>
+        <p class="mb-1"><a href="https://www.instagram.com/saavedra_pool_/" class="footer-link"><i class="bi bi-instagram social-icon"></i>Instagram</a></p>
+        <p class="mb-1">
+          <a href="https://wa.me/5491163534852" class="footer-link" target="_blank">
+            <i class="bi bi-whatsapp social-icon"></i>WhatsApp
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+      <p class="mb-0 fw-bold">© 2025 SAAVEDRA POOL</p>
+      <h5 class="fw-bold mb-0 text-center">CARPINTERÍA</h5>
+      <p class="mb-0 fst-italic">SITE BY <span class="fw-bold">Ralph Jacoby</span></p>
+    </div>
+  </div>
+</footer>
+
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+</html>

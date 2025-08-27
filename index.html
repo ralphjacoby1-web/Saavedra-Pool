@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+
+  <!-- SEO BÁSICO -->
+  <title>Carpintería a Medida | Saavedra Pool - Pinamar</title>
+  <meta name="description" content="Carpintería artesanal en Pinamar. Muebles personalizados, arte en madera y proyectos únicos adaptados a tus espacios. Conocé nuestro trabajo.">
+
+  <!-- SEO REDES SOCIALES -->
+  <meta property="og:title" content="Saavedra Pool | Carpintería a Medida en Pinamar">
+  <meta property="og:description" content="Diseño y fabricación de muebles personalizados. Calidad, arte y tradición en carpintería.">
+  <meta property="og:image" content="https://tusitio.com/media/fotos/thumb-1920-1176187.jpg">
+  <meta property="og:url" content="https://tusitio.com/">
+  <meta property="og:type" content="website">
+  
+  <meta name="twitter:card" content="summary_large_image">
+  <meta name="twitter:title" content="Saavedra Pool | Carpintería a Medida">
+  <meta name="twitter:description" content="Muebles de diseño y calidad en Pinamar. Pedí tu presupuesto.">
+  <meta name="twitter:image" content="https://tusitio.com/media/fotos/thumb-1920-1176187.jpg">
+
+  <!-- Bootstrap CSS + Íconos -->
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
+  <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
+  <link rel="stylesheet" href="styles/styles.css">
+
+  <!-- Favicon -->
+  <link rel="icon" href="media/fotos/favicon.png" type="image/png">
+
+  <!-- Fuente alternativa si querés -->
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Segoe UI', sans-serif;
+    }
+
+    header {
+      border-bottom: 1px solid #e0e0e0;
+      background-color: #fff;
+    }
+
+    .navbar-brand {
+      font-weight: bold;
+      letter-spacing: 1px;
+    }
+
+    .nav-link {
+      color: #000;
+      font-weight: 500;
+    }
+
+    .nav-link:hover {
+      text-decoration: underline;
+    }
+
+    .image-container img {
+      object-fit: cover;
+      height: 100%;
+      width: 100%;
+    }
+    html, body {
+    overflow-x: hidden;
+  }
+   .footer-link {
+    color: #000;
+    text-decoration: none;
+    transition: all 0.3s ease;
+  }
+
+  .footer-link:hover {
+    text-decoration: underline;
+    opacity: 0.8;
+  }
+
+  /* Botones con efecto hover suave */
+  .btn {
+    transition: all 0.3s ease-in-out;
+  }
+
+  .btn:hover {
+    transform: translateY(-2px);
+    box-shadow: 0 4px 12px rgba(0,0,0,0.15);
+  }
+
+  /* Íconos sociales */
+  .social-icon {
+    margin-right: 8px;
+  }
+  .parallax-section {
+  background-image: url('media/fotos/cocina.png');
+  background-attachment: fixed;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  filter: brightness(60%);
+  z-index: 1;
+  /* Para que el filtro funcione bien sin afectar el contenido, es mejor usar un pseudo-elemento: */
+  position: relative;
+}
+
+.parallax-section::before {
+  content: "";
+  position: absolute;
+  top: 0; left: 0; right: 0; bottom: 0;
+  background-color: rgba(0,0,0,0.4); /* oscurece la imagen para mejor legibilidad */
+  z-index: 1;
+}
+
+.parallax-section > .position-relative {
+  position: relative;
+  z-index: 2; /* que quede sobre la capa oscura */
+}
+
+  </style>
+</head>
+<body>
+
+  <!-- HEADER -->
+  <header>
+    <nav class="navbar navbar-expand-lg container-fluid px-3 px-md-5 py-3">
+      <a class="navbar-brand" href="#">
+        <img src="media/fotos/20250627_1907_Saavedra Pool PNG_remix_01jyspt3x1ectbdt7b08zg9gyr.png" alt="Logo" width="120">
+      </a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav">
+        <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+        <ul class="navbar-nav gap-3">
+          <li class="nav-item"><a class="nav-link active" href="#">Principal</a></li>
+          <li class="nav-item"><a class="nav-link" href="sobre_nosotros.html">Sobre nosotros</a></li>
+          <li class="nav-item"><a class="nav-link" href="catalogo.html">Catálogo</a></li>
+          <li class="nav-item"><a class="nav-link" href="formulario.html">Contacto</a></li>
+        </ul>
+      </div>
+    </nav>
+  </header>
+
+  <!-- MAIN SECTION -->
+  <main class="w-100 p-0 m-0">
+
+
+    <div class="row vh-100">
+      <!-- Text Content -->
+      <div class="col-lg-5 d-flex flex-column justify-content-center p-5">
+        <h1 class="display-5 fw-bold">SERVICIOS DE CARPINTERIA</h1>
+        <p class="lead">Muebles personalizados de alta calidad</p>
+        <a href="#arte" class="btn btn-outline-dark mt-3 w-50">CONOCER MÁS</a>
+      </div>
+
+      <!-- Image Content -->
+      <div class="col-lg-7 p-0 image-container">
+        <img src="media/fotos/thumb-1920-1176187.jpg" alt="Carpentry image" class="img-fluid">
+      </div>
+    </div>
+    <!-- Segunda sección: Imagen izquierda + texto derecha -->
+<section class="w-100 mt-5" style="min-height: 90vh;"  id="arte">
+  <div class="row flex-lg-row flex-column-reverse g-0" style="min-height: 90vh;">
+    
+    <!-- Imagen a la izquierda -->
+    <div class="col-lg-7 p-0 image-container" style="height: 100vh; max-height: 90vh;">
+      <img src="media/fotos/carpintero.jpg" alt="Arte en Carpintería" class="img-fluid h-100 w-100" style="object-fit: cover;">
+    </div>
+    
+    <!-- Texto a la derecha -->
+    <div class="col-lg-5 d-flex flex-column justify-content-center p-5">
+      <h2 class="display-6 fw-bold">La carpintería como arte</h2>
+      <p class="lead">
+        La carpintería no es solo una profesión, es una forma de arte que transforma la madera en piezas únicas,
+        con alma, con historia. Cada veta, cada corte y cada unión cuenta una historia de tradición, diseño y pasión.
+      </p>
+      <a href="#productos" class="btn btn-outline-dark mt-3 w-50">VER MÁS</a>    
+    </div>
+  </div>
+</section>
+<!-- Sección: Texto izquierda + imagen derecha -->
+<section class="w-100 mt-5" style="min-height: 90vh;" id="productos">
+  <div class="row g-0" style="height: 100vh;">
+    
+    <!-- Texto a la izquierda -->
+    <div class="col-lg-6 d-flex flex-column justify-content-center p-5">
+      <h2 class="display-6 fw-bold">Proyectos a medida</h2>
+      <p class="lead">Creamos soluciones únicas para cada cliente, adaptadas a sus espacios, estilos y necesidades.</p>
+      <a href="catalogo.html" class="btn btn-outline-dark mt-3 w-50">VER CATÁLOGO</a>
+    </div>
+    
+    <!-- Imagen a la derecha -->
+    <div class="col-lg-6 p-0 image-container">
+      <img src="media/fotos/pool3.jpeg" alt="Proyecto carpintería" class="img-fluid h-100 w-100" style="object-fit: cover;">
+    </div>
+  </div>
+</section>
+<section class="parallax-section position-relative mt-5 overflow-hidden d-flex flex-column justify-content-center align-items-center text-white text-center" style="height: 90vh;">
+  
+  <!-- Contenido centrado -->
+  <div class="position-relative z-2" style="z-index: 3;">
+    <h1 class="display-4 fw-bold">Sobre Nosotros</h1>
+    <a href="sobre_nosotros.html" class="btn btn-outline-light mt-3 px-4 py-2" style="border-radius: 0; font-weight: 600;">Leer más</a>
+  </div>
+
+</section>
+
+
+
+  </main>
+<!-- Línea divisoria entre el contenido y el footer -->
+<hr class="mt-2 mb-0">
+
+<footer class="bg-white text-dark pt-5 mt-0">
+  <div class="container">
+    <div class="row">
+      <!-- Columna 1 -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">AYUDA</h6>
+        <ul class="list-unstyled">
+          <li><a href="formulario.html" class="footer-link">Contacto</a></li>
+        </ul>
+      </div>
+      <!-- Columna 2 -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">CARPINTERÍA</h6>
+        <ul class="list-unstyled">
+          <li><a href="sobre_nosotros.html" class="footer-link">Sobre Nosotros</a></li>
+        </ul>
+      </div>
+      <!-- Columna 3 -->
+      <div class="col-md-3 mb-4">
+        <h6 class="fw-bold">TALLER</h6>
+        <p class="mb-1">Pinamar</p>
+        <p class="mb-1">+5491163534852</p>
+        <p class="mb-0">saavedrapool4@gmail.com</p>
+      </div>
+      <!-- Columna 4 -->
+      <div class="col-md-3 mb-4 text-md-end text-start">
+        <h6 class="fw-bold">SOCIAL</h6>
+        <p class="mb-1"><a href="https://www.instagram.com/saavedra_pool_/" class="footer-link"><i class="bi bi-instagram social-icon"></i>Instagram</a></p>
+        <p class="mb-1">
+          <a href="https://wa.me/5491163534852" class="footer-link" target="_blank">
+            <i class="bi bi-whatsapp social-icon"></i>WhatsApp
+          </a>
+        </p>
+      </div>
+    </div>
+
+    <hr>
+
+    <div class="d-flex flex-column flex-md-row justify-content-between align-items-center py-3">
+      <p class="mb-0 fw-bold">© 2025 SAAVEDRA POOL</p>
+      <h5 class="fw-bold mb-0 text-center">CARPINTERÍA</h5>
+      <p class="mb-0 fst-italic">SITE BY <span class="fw-bold">Ralph Jacoby</span></p>
+    </div>
+  </div>
+</footer>
+
+
+
+  
+  <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
