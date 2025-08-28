@@ -7,7 +7,7 @@
   <!-- Bootstrap CSS -->
   <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" />
   <link href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.10.5/font/bootstrap-icons.css" rel="stylesheet">
-    <link rel="stylesheet" href="styles/styles.css">
+  <link rel="stylesheet" href="styles/styles.css">
 
   <style>
     body {
@@ -112,7 +112,7 @@
 
 <main>
 
-    <section class="container-fluid mt-5 mb-5">
+<section class="container-fluid mt-5 mb-5">
   <div class="row gx-0 justify-content-center align-items-center">
     
     <!-- Texto (izquierda en pantallas grandes) -->
@@ -122,13 +122,21 @@
 
         <!-- Solo visible en pantallas chicas -->
         <div class="d-lg-none mb-4">
-          <!-- Carrusel en móviles debajo del título -->
           <div id="carouselProductoMobile" class="carousel slide" data-bs-ride="carousel">
             <div class="carousel-inner">
               <div class="carousel-item active">
-                <img src="mueble_cuadrado.webp" class="d-block w-100 img-fluid rounded" alt="Mesa ratona minimalista" style="object-fit: cover; max-height: 500px;">
+                <img src="media/fotos/catalogo/mesa_vintage.webp" class="d-block w-100 img-fluid rounded" alt="Mesa Vintage" style="object-fit: cover; max-height: 500px;">
+              </div>
+              <div class="carousel-item">
+                <img src="media/fotos/mesa_vintage-2.webp" class="d-block w-100 img-fluid rounded" alt="Mesa Vintage lateral" style="object-fit: cover; max-height: 500px;">
               </div>
             </div>
+            <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductoMobile" data-bs-slide="prev">
+              <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#carouselProductoMobile" data-bs-slide="next">
+              <span class="carousel-control-next-icon"></span>
+            </button>
           </div>
         </div>
 
@@ -159,10 +167,10 @@
       <div id="carouselProductoDesktop" class="carousel slide" data-bs-ride="carousel">
         <div class="carousel-inner">
           <div class="carousel-item active">
-            <img src="media/fotos/catalogo/mesa_vintage.webp" class="d-block w-100 img-fluid" alt="Producto 1" style="object-fit: cover; max-height: 500px;">
+            <img src="media/fotos/catalogo/mesa_vintage.webp" class="d-block w-100 img-fluid" alt="Mesa Vintage" style="object-fit: cover; max-height: 500px;">
           </div>
           <div class="carousel-item">
-            <img src="media/fotos/mesa_vintage-2.webp" class="d-block w-100 img-fluid" alt="Producto 2" style="object-fit: cover; max-height: 500px;">
+            <img src="media/fotos/mesa_vintage-2.webp" class="d-block w-100 img-fluid" alt="Mesa Vintage lateral" style="object-fit: cover; max-height: 500px;">
           </div>
         </div>
         <button class="carousel-control-prev" type="button" data-bs-target="#carouselProductoDesktop" data-bs-slide="prev">
@@ -175,8 +183,6 @@
     </div>
   </div>
 </section>
-
-
 
 </main>
 
